@@ -316,25 +316,25 @@ export default class Presentation extends React.Component {
           </Heading>
           <List textColor="primary" style={listStyle} >
             <Appear>
-              <ListItem><Link textColor="primary" href="https://guide.elm-lang.org/">Introduction to Elm</Link></ListItem>
+              <ListItem><Link textColor="primary" href="https://guide.elm-lang.org/" target="_blank">Introduction to Elm</Link></ListItem>
             </Appear>
             <Appear>
-              <ListItem><Link textColor="primary" href="https://ellie-app.com/new">Ellie</Link></ListItem>
+              <ListItem><Link textColor="primary" href="https://ellie-app.com/new" target="_blank">Ellie</Link></ListItem>
             </Appear>
             <Appear>
-              <ListItem><Link textColor="primary" href="https://github.com/elm-lang/elm-reactor">Elm Reactor</Link></ListItem>
+              <ListItem><Link textColor="primary" href="https://github.com/elm-lang/elm-reactor" target="_blank">Elm Reactor</Link></ListItem>
             </Appear>
             <Appear>
-              <ListItem><Link textColor="primary" href="https://github.com/avh4/elm-format">Elm Format</Link></ListItem>
+              <ListItem><Link textColor="primary" href="https://github.com/avh4/elm-format" target="_blank">Elm Format</Link></ListItem>
             </Appear>
             <Appear>
-              <ListItem><Link textColor="primary" href="http://package.elm-lang.org/">Elm Packages</Link></ListItem>
+              <ListItem><Link textColor="primary" href="http://package.elm-lang.org/" target="_blank">Elm Packages</Link></ListItem>
             </Appear>
             <Appear>
-              <ListItem><Link textColor="primary" href="https://mbylstra.github.io/html-to-elm/">HTML to Elm</Link></ListItem>
+              <ListItem><Link textColor="primary" href="https://mbylstra.github.io/html-to-elm/" target="_blank">HTML to Elm</Link></ListItem>
             </Appear>
             <Appear>
-              <ListItem><Link textColor="primary" href=" http://noredink.github.io/json-to-elm/">JSON to Elm</Link></ListItem>
+              <ListItem><Link textColor="primary" href=" http://noredink.github.io/json-to-elm/" target="_blank">JSON to Elm</Link></ListItem>
             </Appear>
           </List>
         </Slide>
