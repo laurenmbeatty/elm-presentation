@@ -1,0 +1,8 @@
+-- UPDATE
+update : Msg -> Model -> (Model, Cmd Msg)
+update msg model =
+    case msg of
+      PhotosResult (Ok results) ->
+        ({ model | results = results, query = ""}, Cmd.none)
+      PhotosResult (Err err) ->
+        ({ model | results = [], query = (toString err) }, Cmd.none)

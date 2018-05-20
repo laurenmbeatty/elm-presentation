@@ -1,0 +1,21 @@
+-- MODEL
+type alias Model =
+  { query : String
+  , results : List SearchResult
+  , initialIndex : Int
+  }
+
+type alias SearchResult =
+  { likes : Int
+  , user : PhotosUser
+  , urls : PhotosUrls
+  }
+
+type alias PhotosUrls =
+  { small : String
+  , regular : String
+  , full : String
+  }
+
+type alias PhotosUser =
+  { username : String }

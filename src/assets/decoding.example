@@ -1,0 +1,22 @@
+decodePhotosList : Json.Decode.Decoder (List SearchResult)
+decodePhotosList =
+  Json.Decode.list decodePhoto
+
+decodePhotosUser : Json.Decode.Decoder PhotosUser
+decodePhotosUser =
+    Json.Decode.Pipeline.decode PhotosUser
+        |> Json.Decode.Pipeline.required "username" (Json.Decode.string)
+
+decodePhotosUrls : Json.Decode.Decoder PhotosUrls
+decodePhotosUrls =
+    Json.Decode.Pipeline.decode PhotosUrls
+        |> Json.Decode.Pipeline.required "small" (Json.Decode.string)
+        |> Json.Decode.Pipeline.required "regular" (Json.Decode.string)
+        |> Json.Decode.Pipeline.required "full" (Json.Decode.string)
+
+decodePhoto : Json.Decode.Decoder SearchResult
+decodePhoto =
+    Json.Decode.Pipeline.decode SearchResult
+        |> Json.Decode.Pipeline.required "likes" (Json.Decode.int)
+        |> Json.Decode.Pipeline.required "user" (decodePhotosUser)
+        |> Json.Decode.Pipeline.required "urls" (decodePhotosUrls)
