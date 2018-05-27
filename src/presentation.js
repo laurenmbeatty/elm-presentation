@@ -12,6 +12,7 @@ require("normalize.css");
 
 const images = {
   architecture: require("./assets/Elm_Architecture.png"),
+  cmdArchitecture: require("./assets/ElmArchitecture2.png"),
   errorMessage: require("./assets/ErrorMessages.png"),
   undef: require("./assets/undefined-is-not-a-function.jpg"),
   beyonce: require("./assets/Bey.gif"),
