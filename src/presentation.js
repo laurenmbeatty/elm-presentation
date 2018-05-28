@@ -21,15 +21,16 @@ const images = {
   viewTwo: require("./assets/ViewTwo.png"),
   update: require("./assets/Update.png"),
   decoder: require("./assets/Decoder.png"),
-  alias: require("./assets/TypeAlias.png"),
+  aliasOne: require("./assets/typeAliasOne.png"),
+  alias: require("./assets/type_alias.png"),
   before: require("./assets/before.png"),
   annotation: require("./assets/type_annotations.png"),
   union: require("./assets/UnionTypes.png"),
   init: require("./assets/Init.png"),
   json: require("./assets/JSON.png"),
   function: require("./assets/function.png"),
-  jsFunction: require("./assets/jsfunction.png"),
-  htmlFunction: require("./assets/htmlFunction.png")
+  jsFunction: require("./assets/functionJS.png"),
+  htmlFunction: require("./assets/ElmFunction@2xTwo.png")
 };
 
 // const video = require('./assets/elm-videos/ElmDemo.mov');
@@ -235,7 +236,10 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
         <Slide transition={["zoom"]} bgColor="teal">
-          <Image width="90%" height="90%" src={images.alias.replace("/", "")} />
+          <Image width="90%" height="90%" src={images.aliasOne.replace("/", "")} />
+          <Appear>
+            <Image width="90%" height="90%" src={images.alias.replace("/", "")} />
+          </Appear>
         </Slide>
         <Slide transition={["zoom"]} bgColor="blue">
           <Heading size={1} fit lineHeight={1} textColor="primary" margin="0 0 30px 0">
