@@ -260,9 +260,6 @@ export default class Presentation extends React.Component {
         <Slide transition={["fade"]} bgColor="secondary" textColor="tertiary">
           <Image width="75%" height="75%" src={images.architecture.replace("/", "")} />
         </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="tertiary">
-          {/* <video src={video} style={{height: '70vh'}}></video> */}
-        </Slide>
         <Slide transition={["fade"]} bgColor="teal" textColor="tertiary">
           <Heading size={6} textColor="primary" caps>
             Model
@@ -287,7 +284,7 @@ export default class Presentation extends React.Component {
           </Heading>
           <Image width="100%" height="100%" src={images.update.replace("/", "")} />
         </Slide>
-        <Slide transition={["fade"]} bgColor="blue" textColor="tertiary">
+        {/* <Slide transition={["fade"]} bgColor="blue" textColor="tertiary">
           <Heading size={6} textColor="primary" caps>
             Decoding Json
           </Heading>
@@ -297,7 +294,7 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["fade"]} bgColor="teal" textColor="tertiary">
           <Image width="75%" height="75%" src={images.decoder.replace("/", "")} />
-        </Slide>
+        </Slide> */}
         <Slide transition={["zoom"]} bgColor="blue">
           <Heading size={1} fit lineHeight={1} textColor="primary" margin="0 0 30px 0">
             Fearless refactoring
