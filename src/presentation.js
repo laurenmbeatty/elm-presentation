@@ -21,8 +21,8 @@ const images = {
   viewTwo: require("./assets/ViewTwo.png"),
   update: require("./assets/Update.png"),
   decoder: require("./assets/Decoder.png"),
-  aliasOne: require("./assets/typeAliasOne.png"),
-  alias: require("./assets/type_alias.png"),
+  aliasOne: require("./assets/withoutTypeAlias.png"),
+  alias: require("./assets/TypeAlias.png"),
   before: require("./assets/before.png"),
   annotation: require("./assets/type_annotations.png"),
   union: require("./assets/UnionTypes.png"),
@@ -196,9 +196,6 @@ export default class Presentation extends React.Component {
           </Heading>
           <List textColor="primary" style={listStyle}>
             <Appear>
-              <ListItem>Ensures no runtime errors</ListItem>
-            </Appear>
-            <Appear>
               <ListItem>Compiler traces flow of data</ListItem>
             </Appear>
             <Appear>
@@ -237,17 +234,19 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["zoom"]} bgColor="teal">
           <Image width="90%" height="90%" src={images.aliasOne.replace("/", "")} />
-          <Appear>
-            <Image width="90%" height="90%" src={images.alias.replace("/", "")} />
-          </Appear>
+        </Slide>
+        <Slide bgColor="teal">
+          <Image width="80%" height="80%" src={images.alias.replace("/", "")} />
         </Slide>
         <Slide transition={["zoom"]} bgColor="blue">
           <Heading size={1} fit lineHeight={1} textColor="primary" margin="0 0 30px 0">
             Union Types
           </Heading>
-          <Appear>
-            <Text textColor="primary">Data with a weird shape</Text>
-          </Appear>
+          <List textColor="primary" style={listStyle}>
+            <Appear>
+              <ListItem>Data with a different shape</ListItem>
+            </Appear>
+          </List>
         </Slide>
         <Slide transition={["zoom"]} bgColor="teal">
           <Image width="100%" height="100%" src={images.union.replace("/", "")} />
