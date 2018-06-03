@@ -271,12 +271,12 @@ export default class Presentation extends React.Component {
           </Heading>
           <Image width="100%" height="100%" src={images.view.replace("/", "")} />
         </Slide>
-        <Slide transition={["fade"]} bgColor="teal" textColor="tertiary">
+        {/* <Slide transition={["fade"]} bgColor="teal" textColor="tertiary">
           <Heading size={6} textColor="primary" caps>
             View Part II
           </Heading>
           <Image width="100%" height="100%" src={images.viewTwo.replace("/", "")} />
-        </Slide>
+        </Slide> */}
         <Slide transition={["fade"]} bgColor="teal" textColor="tertiary">
           <Heading size={6} textColor="primary" caps>
             Update
