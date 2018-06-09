@@ -19,7 +19,7 @@ const images = {
   model: require("./assets/Model.png"),
   view: require("./assets/View.png"),
   viewTwo: require("./assets/ViewTwo.png"),
-  update: require("./assets/Update.png"),
+  update: require("./assets/update.png"),
   decoder: require("./assets/Decoder.png"),
   aliasOne: require("./assets/withoutTypeAlias.png"),
   alias: require("./assets/TypeAlias.png"),
@@ -156,7 +156,7 @@ export default class Presentation extends React.Component {
               <ListItem>Scalable, well-architected code</ListItem>
             </Appear>
             <Appear>
-              <ListItem>Great Developer UX</ListItem>
+              <ListItem>Great Developer Experience</ListItem>
             </Appear>
           </List>
         </Slide>
@@ -184,7 +184,7 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["zoom"]} bgColor="blue">
           <Heading size={1} fit lineHeight={1} textColor="primary" margin="0 0 30px 0">
-            Let's see Elm in action
+            Let's see Elm at Work
           </Heading>
         </Slide>
         <Slide transition={["zoom"]} bgColor="blue">
@@ -303,7 +303,7 @@ export default class Presentation extends React.Component {
         </Slide> */}
         <Slide transition={["zoom"]} bgColor="blue">
           <Heading size={1} fit lineHeight={1} textColor="primary" margin="0 0 30px 0">
-            How does Elm provide Great Developer UX?
+            How does Elm provide Great Developer Experience?
           </Heading>
         </Slide>
         <Slide transition={["zoom"]} bgColor="blue">
