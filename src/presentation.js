@@ -24,7 +24,7 @@ const images = {
   aliasOne: require("./assets/withoutTypeAlias.png"),
   alias: require("./assets/TypeAlias.png"),
   before: require("./assets/before.png"),
-  annotation: require("./assets/type_annotations.png"),
+  annotation: require("./assets/typeAnnotation.png"),
   union: require("./assets/UnionTypes.png"),
   init: require("./assets/Init.png"),
   json: require("./assets/JSON.png"),
@@ -63,12 +63,12 @@ export default class Presentation extends React.Component {
       <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
         <Slide transition={["zoom"]} bgColor="blue">
           <Heading size={1} fit lineHeight={1} textColor="primary" margin="0 0 30px 0">
-            JavaScript...
+            JavaScript
           </Heading>
         </Slide>
         <Slide transition={["zoom"]} bgColor="blue">
           <Heading size={1} fit lineHeight={1} textColor="primary" margin="0 0 30px 0">
-            The Good!
+            The Good
           </Heading>
           <Appear>
             <div>
@@ -156,10 +156,7 @@ export default class Presentation extends React.Component {
               <ListItem>Scalable, well-architected code</ListItem>
             </Appear>
             <Appear>
-              <ListItem>Tremendous tooling</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>Error messages that are actually helpful</ListItem>
+              <ListItem>Great Developer UX</ListItem>
             </Appear>
           </List>
         </Slide>
@@ -253,6 +250,11 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["zoom"]} bgColor="blue">
           <Heading size={1} fit lineHeight={1} textColor="primary" margin="0 0 30px 0">
+            How does Elm's code stay well-architected?
+          </Heading>
+        </Slide>
+        <Slide transition={["zoom"]} bgColor="blue">
+          <Heading size={1} fit lineHeight={1} textColor="primary" margin="0 0 30px 0">
             The Elm Architecture
           </Heading>
         </Slide>
@@ -296,6 +298,11 @@ export default class Presentation extends React.Component {
         </Slide> */}
         <Slide transition={["zoom"]} bgColor="blue">
           <Heading size={1} fit lineHeight={1} textColor="primary" margin="0 0 30px 0">
+            How does Elm provide Great Developer UX?
+          </Heading>
+        </Slide>
+        <Slide transition={["zoom"]} bgColor="blue">
+          <Heading size={1} fit lineHeight={1} textColor="primary" margin="0 0 30px 0">
             Fearless refactoring
           </Heading>
           <List textColor="primary" style={listStyle}>
@@ -316,20 +323,6 @@ export default class Presentation extends React.Component {
               <ListItem>
                 <Link textColor="primary" href="https://guide.elm-lang.org/" target="_blank">
                   Introduction to Elm
-                </Link>
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>
-                <Link textColor="primary" href="https://ellie-app.com/new" target="_blank">
-                  Ellie
-                </Link>
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>
-                <Link textColor="primary" href="https://github.com/elm-lang/elm-reactor" target="_blank">
-                  Elm Reactor
                 </Link>
               </ListItem>
             </Appear>
