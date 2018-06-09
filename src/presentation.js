@@ -184,6 +184,11 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["zoom"]} bgColor="blue">
           <Heading size={1} fit lineHeight={1} textColor="primary" margin="0 0 30px 0">
+            Let's see Elm in action
+          </Heading>
+        </Slide>
+        <Slide transition={["zoom"]} bgColor="blue">
+          <Heading size={1} fit lineHeight={1} textColor="primary" margin="0 0 30px 0">
             How does Elm guarantee no RTEs?
           </Heading>
         </Slide>
