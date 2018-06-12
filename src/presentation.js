@@ -70,11 +70,14 @@ export default class Presentation extends React.Component {
           <Heading size={1} fit lineHeight={1} textColor="primary" margin="0 0 30px 0">
             The Good
           </Heading>
-          <Appear>
-            <div>
-              <Image width="75%" height="75%" src={images.beyonce.replace("/", "")} />
-            </div>
-          </Appear>
+          <List fit style={listStyle} textColor="primary">
+            <Appear>
+              <ListItem>Flexible</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Relatively beginner-friendly</ListItem>
+            </Appear>
+          </List>
         </Slide>
         <Slide transition={["zoom"]} bgColor="blue">
           <Heading size={1} fit lineHeight={1} textColor="primary" margin="0 0 30px 0">
@@ -167,9 +170,6 @@ export default class Presentation extends React.Component {
           <List textColor="primary" style={listStyle}>
             <Appear>
               <ListItem>Everything's a function!</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>Yes, everything.</ListItem>
             </Appear>
           </List>
         </Slide>
@@ -368,8 +368,22 @@ export default class Presentation extends React.Component {
             </Appear>
             <Appear>
               <ListItem>
-                <Link textColor="primary" href=" " target="_blank">
+                <Link textColor="primary" href="http://osn-elm-presentation.surge.sh/#/" target="_blank">
                   Slides
+                </Link>
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                <Link textColor="primary" href="https://whimsical.co/" target="_blank">
+                  Whimsical
+                </Link>
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                <Link textColor="primary" href="https://coggle.it/diagram/WohSPCGMFQABGL0_/t/elm" target="_blank">
+                  Coggle
                 </Link>
               </ListItem>
             </Appear>
