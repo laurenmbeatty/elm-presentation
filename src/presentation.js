@@ -354,14 +354,14 @@ export default class Presentation extends React.Component {
             </Appear>
             <Appear>
               <ListItem>
-                <Link textColor="primary" href=" http://noredink.github.io/json-to-elm/" target="_blank">
+                <Link textColor="primary" href="http://noredink.github.io/json-to-elm/" target="_blank">
                   JSON to Elm
                 </Link>
               </ListItem>
             </Appear>
             <Appear>
               <ListItem>
-                <Link textColor="primary" href=" https://github.com/laurenmbeatty/osn-elm" target="_blank">
+                <Link textColor="primary" href="https://github.com/laurenmbeatty/osn-elm/tree/feature-enter-key" target="_blank">
                   GitHub repo
                 </Link>
               </ListItem>
