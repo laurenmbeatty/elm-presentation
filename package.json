@@ -6,7 +6,7 @@
     "buble": "^0.19.4",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
-    "spectacle-scripts": "2.0.0"
+    "spectacle-scripts": "2.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
